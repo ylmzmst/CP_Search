@@ -1,9 +1,10 @@
-# SolidDNA using NuGet Package
-This project shows how to create a basic SolidDNA WPF project using the new NuGet package instead of referencing source code directly
+# CP Search using SolidDNA
 
-# Video
-I will be making videos available on my YouTube channel that will be guides to everything contained in this repository
+I design this tool for searching custom property in all configuration.
 
-http://www.angelsix.com/youtube
+I want to record a video for description if i have time for this
+
+
+
 
 
