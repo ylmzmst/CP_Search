@@ -40,6 +40,10 @@ namespace SolidDNA.WPF.Blank
         private void UserControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
             Application.ActiveModelInformationChanged += Application_ActiveModelInformationChanged;
+            nopropforconfig.Visibility = System.Windows.Visibility.Hidden;
+            cpsearch.Visibility = System.Windows.Visibility.Hidden;
+            noprop_txt.Text = "There is no Open Document";
+
         }
 
         private void Application_ActiveModelInformationChanged(CADBooster.SolidDna.Model obj)
@@ -47,11 +51,13 @@ namespace SolidDNA.WPF.Blank
             ThreadHelpers.RunOnUIThread(() => 
             {
                 var swModel = Application.ActiveModel;
+
+
                 if (swModel == null)
                 {
                     nopropforconfig.Visibility = System.Windows.Visibility.Visible;
                     cpsearch.Visibility = System.Windows.Visibility.Hidden;
-                    noprop_txt.Text = "There is no Document";
+                    noprop_txt.Text = "There is no Open Document";
                 }
                 else if (swModel.IsDrawing == true)
                 {
