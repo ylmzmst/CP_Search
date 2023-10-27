@@ -2,9 +2,7 @@
 
 I design this tool using SolidDNA for searching custom property in all configuration.
 
-I want to record a video for description if i have time for this
-
-
-
+there is explanation video for using the search tool.
+https://youtu.be/MsHbVSNvFbA
 
 
